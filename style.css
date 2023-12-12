@@ -1,0 +1,452 @@
+body{
+  /* background-color: #0492C2; */
+  color:white;
+  /* background: rgb(25, 131, 131); */
+  background: #133;
+  font-family: Proxima Nova,Verdana,Avenir Next;
+  
+}
+*{
+  margin: 0;
+  padding: 0;
+  /* box-sizing: border-box; */
+  font-family: sans-serif;
+}
+#education ul{
+  margin:auto 150px;
+}
+.head .head3{
+  font-size: 38px;
+  color:yellow;
+  position: relative;
+  font-weight:bold;
+  letter-spacing: 2px;
+  transition: 0.6s;
+}
+#education h1:after {
+    content: 'Education';
+    border-bottom:solid brown 4px; /* using border rather than underline; it's easier that way */
+    width:200px; /*however long you want the underline */
+    display:inline-block; /* this is required for the width parameter to work */
+}
+#education h1{
+  margin:200px 0px 40px 200px;
+  color:green;
+  font-size: 50px;
+}
+.head1:after{
+  content: 'About Me';
+  border-bottom:solid brown 4px; /* using border rather than underline; it's easier that way */
+  width:200px; /*however long you want the underline */
+  /* display:inline-block;  */
+}
+span{
+  color:#ff004f;
+}
+.head{
+  position: relative;
+  width: 100%;
+  height: 75vh;
+}
+nav{
+  background: #4433cc;
+  position: fixed;
+  top:0;
+  left:0;
+  width:98%;
+  height:3%;
+  z-index: 10000;
+  display: flex;
+  padding: 15px 90px 15px 80px;
+  align-items: center;
+  /* position: fixed; */
+  justify-content: space-between;
+  transition:0.6s;
+}
+nav ul{
+  margin-right:70px;
+  display:flex;
+  justify-content: center;
+  align-items: center;
+}
+nav ul li{
+  list-style: none;
+  position:relative;
+}
+nav ul li a{
+  position: relative;
+  margin:0 19px;
+  text-decoration: none;
+  letter-spacing: 2px;
+  transition: 0.6s;
+  font-size: 13px;
+  color: white;
+  font-weight: bold;
+}
+nav ul li a:hover{
+  text-decoration: underline;
+  color: red;
+}
+
+.details{
+  margin-left:10%;
+  margin-top: 17%;
+}
+.details h1{
+  font-size: 60px;
+  color:white;
+  margin-bottom: 20px;
+}
+span{
+  color: darkbrown;
+}
+.details p{
+  color:rgb(200, 159, 238);
+  line-height: 40px;
+  font-size: 25px;
+}
+.details a{
+  text-decoration: none;
+  padding:10px 18px;
+  background: #ff004f;
+  font-size: 20px;
+  font-weight: bold;
+  display:inline-block;
+  color:white;
+  margin:30px 0;
+  border-radius: 5px;
+}
+.imgs {
+  width:40%;
+  height: 80%;
+  position:absolute;
+  bottom:200px;
+  right:100px;
+}
+.imgs img {
+  height:95%;
+  position: absolute;
+  left:50%;
+  bottom:0;
+  transform:translateX(-50%);
+  transition: bottom 1s,left 1s;
+}
+.imgs:hover .img1{
+  bottom: 40px;
+}
+.imgs:hover .port{
+  left: 45%;
+}
+.head1{
+  font-size: 50px;
+  font-weight: bold;
+  text-align: center;
+  text-decoration: underline initial red;
+}
+.head2{
+  font-size: 50px;
+  font-weight: bold;
+  text-align: center;
+  color:#FD2D00;
+}
+.about{
+  margin:0 100px;
+  padding: 20px;
+  padding-top: 180px;
+  display: flex;
+}
+.skill-list{
+  width:300px;
+    display: grid;
+    grid-gap: 20px;
+    grid-template-columns: repeat(2,1fr);
+    grid-template-rows: repeat(3,1fr);
+    margin: 40Px 50px;
+}
+.skills{
+  background: lightpink;
+  padding:25px;
+  width:100px;
+  border-radius: 25px;
+  text-align: center;
+  font-size: 18px;
+  color:blue;
+  font-weight: bold;
+}
+.about h1{
+  flex-basis: 30%;
+  margin-top:100px;
+}
+.about .para1{
+  flex-basis: 66%;
+}
+.aboutpara{
+  font-size:20px;
+  margin:30px 50px;
+  line-height: 40px;
+}
+.skill{
+  font-size: 30px;
+  margin:30px 50px;
+  font-weight: bold;
+  text-decoration:underline;
+  color:blue;
+}
+.lang{
+  font-size: 30px;
+  margin:30px 70px;
+  line-height: 45px;
+}
+.contact-left{
+  flex-basis: 30%;
+  margin-left: 90px;
+}
+.contact-right{
+  flex-basis: 57%;
+}
+.row{
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  margin-top: 80px;
+}
+.contact-left p{
+  margin-top: 30px;
+  margin-left:40px;
+  font-size: 20px;
+}
+.contact-left p i{
+  color:darkmagenta;
+  margin-right: 15px;
+  font-size: 20px;
+}
+.social-icons{
+  margin-top: 30px;
+  margin-left:40px;
+}
+.social-icons a{
+  text-decoration: none;
+  font-size: 40px;
+  margin-right: 15px;
+  color:#ff004f;
+  display: inline-block;
+  transition: transform 0.5s;
+}
+.social-icons a:hover{
+  color:#ff004f;
+  transform: translateY(-5px);
+}
+button{
+  padding:17px 55px;
+  background: #ff004f;
+  font-size: 30px;
+  font-weight: bold;
+  color:white;
+  margin-top:20px;
+  border-radius: 15px;
+  border:none;
+  cursor: pointer;
+}
+.contact-right form{
+  width:90%;
+}
+form input, form textarea{
+  width: 80%;
+  border:0;
+  outline:none;
+  background:rgb(224, 222, 222);
+  padding:15px;
+  margin:15px 0;
+  font-size: 23px;
+  border-radius: 7px;
+}
+.copyright{
+  width:100%;
+  text-align: center;
+  padding:25px 0;
+  background: #262626;
+  font-weight: 300;
+  margin-top: 20px;
+  color: white;
+  font-size: larger;
+}
+.reveal{
+  position: relative;
+  transform: translateY(150px);
+  opacity: 0;
+  transition: 2s all ease;
+}
+.reveal.active{
+  transform: translateY(0);
+  opacity: 1;
+}
+.projects-list{
+  display: grid;
+  grid-template-columns: repeat(auto-fit,minmax(100px,1fr));
+  grid-gap:40px;
+  margin-top: 50px;
+}
+#projects{
+  padding: 50px 80px;
+}
+#projects .head2{
+  color:#ff004f
+}
+.head5{
+  text-align: center;
+  margin-top:20px;
+  font-size:20px;
+  color:rgb(216, 11, 11);
+  padding:0px 20px;
+}
+.work{
+  background: lightgray;
+  border-radius: 10px;
+  position: relative;
+  overflow: hidden;
+  /* width:450px; */
+  /* height:400px; */
+  transition:transform 0.5s;
+  width:80%;
+  height:80%;
+}
+.work img{
+  width:95%;
+  border-radius: 10px;
+}
+.layer{
+  width:100%;
+  height:0;
+  background: linear-gradient(rgba(0,0,0,0.6),#ff004f);
+  border-radius: 10px;
+  position: absolute;
+  left:0;
+  bottom:0;
+  overflow:hidden;
+  display:flex;
+  align-items: center;
+  justify-content: center;
+  text-align:center;
+  font-size:20px;
+  color:white;
+  transition: 0.5s;
+}
+.layer p{
+  margin:0 50px;
+  font-size: 14px;
+  line-height: 20px;
+}
+.work:hover{
+  transform:scale(1.1)
+}
+.work:hover .layer{
+  height: 100%;
+}
+.fn_cs_boxed_list .item {
+  width: 60%;
+  float: left;
+  clear: both;
+  background-color: rgb(184, 183, 183);
+  position: relative;
+  padding: 42px 40px 43px;
+  border-radius: 5px;
+}
+.fn_cs_boxed_list ul {
+  list-style-type: none;
+  display: flex;
+  flex-direction: column;
+  margin: 0px;
+  padding: 0px;
+}
+ul {
+  list-style-type: none;
+  margin: 30px;
+}
+.item{
+  margin:50px;
+  width:60%;
+}
+.college-names{
+  display: flex;
+}
+.college-names h2{
+  flex-basis: 30%;
+  font-size:20px;
+  color:rgba(255, 34, 0, 0.91);
+  margin:100px 0px 50px 200px;
+}
+.college-names .item{
+  flex-basis: 80%;
+}
+.college-names .btech:after{
+  content: 'B.TECH';
+  border-bottom:solid brown 4px; /* using border rather than underline; it's easier that way */
+  width:70px; /*however long you want the underline */
+  display:inline-block; 
+}
+.college-names .ssc:after{
+  content: 'SSC';
+  border-bottom:solid brown 4px; /* using border rather than underline; it's easier that way */
+  width:40px; /*however long you want the underline */
+  display:inline-block; 
+}
+.college-names .inter:after{
+  content: 'INTER';
+  border-bottom:solid brown 4px; /* using border rather than underline; it's easier that way */
+  width:60px; /*however long you want the underline */
+  display:inline-block; 
+}
+.college-names .item{
+  font-size:17px;
+  color:darkblue;
+  line-height: 40px;
+}
+
+.item_top span{
+  color:darkblue;
+}
+.item h5{
+  color:#ff004f
+}
+/* small screen  */
+nav .fa-regular,.fa-solid{
+  display: none;
+}
+/* @media only screen and (max-width:600px){
+  .head{
+    background-image: url("girl2.jpg");
+    height:200vh;
+  }
+  .imgs{
+    display: none;
+  }
+  .details h1,p{
+    margin-top: 90%;
+    font-size: 60px;
+  }
+  nav .fa-regular,.fa-solid{
+    display: block;
+    font-size: 25px;
+  }
+  nav ul{
+    background: #ff004f;
+    position:fixed;
+    top:0;
+    right:-200px;
+    width:200px;
+    height: 120vh;
+    /* height: calc(100% + 60px); 
+    padding-top:50px;
+    z-index: 2;
+  }
+  nav ul li{
+    display: block;
+    margin:25px;
+  }
+  nav ul .fa-regular,.fa-solid{
+    position: absolute;
+    top:25px;
+    left:25px;
+    cursor: pointer;
+  }
+}*/
